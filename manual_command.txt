@@ -1,0 +1,7 @@
+python3 -m venv ./udacity
+
+/usr/bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic sf.crime.call.analysis.v1 --from-beginning
+
+~/Desktop/App/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic sf.crime.call.analysis.v1 --from-beginning
+
+~/Desktop/App/spark/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.3 --master "local[2]" data_stream.py`
